@@ -5,6 +5,7 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import urllib.request
 import sys
+import path
 from path import Path
 
 dir = path.Path(__file__).abspath()
