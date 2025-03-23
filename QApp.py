@@ -1,5 +1,4 @@
 from PIL import Image
-import pyautogui
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -50,43 +49,6 @@ if complete:
         st.write("things and stuff score: " + str(right_score))
         
 
-
-
-
-    # # Blue top, green left, purple right
-    # # Make sure you actually have the triangle on screen
-    # img = pyautogui.screenshot()
-    # st.image(img)
-    # arr = np.array(img)
-    
-    # # Works ok for now
-    # # Will need to make these more robust later using proximity to yellow pixels
-    # blue = np.where((arr[:,:,0]==77) & (arr[:,:,1]==190) & (arr[:,:,2]==239))
-    # green = np.where((arr[:,:,0]==99) & (arr[:,:,1]==200) & (arr[:,:,2]==128))
-    # purple = np.where((arr[:,:,0]==163) & (arr[:,:,1]==73) & (arr[:,:,2]==164))
-    # # yellow = np.where((arr[:,:,0]==255) & (arr[:,:,1]==242) & (arr[:,:,2]==0))
-    # red = np.where((arr[:,:,0]==237) & (arr[:,:,1]==19) & (arr[:,:,2]==226))
-    
-    # st.write(blue)
-    # st.write(green)
-    # st.write(purple)
-    # st.write(red)
-
-    # for colour in [blue, green, purple]:
-    #     colour = [colour[0][0],colour[1][0]]
-
-    # max_dist = ((top[0] - left[0])**2 + (top[1] - left[1])**2)**0.5
-    # top_score = 1/((((selection[0] - top[0])**2 + (selection[1] - top[1])**2)**0.5)/max_dist)
-    # left_score = 1/((((selection[0] - left[0])**2 + (selection[1] - left[1])**2)**0.5)/max_dist)
-    # right_score = 1/((((selection[0] - right[0])**2 + (selection[1] - right[1])**2)**0.5)/max_dist)
-
-    # print(blue_score)
-    # print(green_score)
-    # print(purple_score)
-
-    # df = pd.DataFrame(data={'Top': blue_score,
-    #                         'Left': green_score,
-    #                         'Right': purple_score})
 
 #  st.dataframe(data=df)
 # st.write(red)
