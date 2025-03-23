@@ -5,7 +5,7 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import urllib.request
 
-# urllib.request.urlretrieve('https://raw.githubusercontent.com/daviddoust1/quantapp/refs/heads/main/TriangleText.png', 'TriangleText.png')
+urllib.request.urlretrieve('https://raw.githubusercontent.com/daviddoust1/quantapp/refs/heads/main/TriangleText.png', 'TriangleText.png')
 
 # Streamlit app: To run, open a terminal and run:
 # streamlit run QApp.py
