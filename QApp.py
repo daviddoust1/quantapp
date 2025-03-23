@@ -21,7 +21,7 @@ canvas_result = st_canvas(
     stroke_width=4,
     height=500,
     width=600,
-    background_image=Image.open('./quantapp/static/TriangleText.png'), 
+    background_image=Image.open('./static/TriangleText.png'), 
     drawing_mode='point',
     point_display_radius=4)
 
