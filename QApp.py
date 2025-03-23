@@ -38,15 +38,15 @@ if complete:
         top = [291,52]
         left = [81,440]
         right = [500,438]
-        selection = [int(objects['left'][0]), int(objects['top'][0])]
+        # selection = [int(objects['left'][0]), int(objects['top'][0])]
 
-        # Will need to fix these a bit - max_dist changes with the position of the point
-        max_dist = ((top[0] - left[0])**2 + (top[1] - left[1])**2)**0.5
-        top_score = 1-((((selection[0] - top[0])**2 + (selection[1] - top[1])**2)**0.5)/max_dist)
-        left_score = 1-((((selection[0] - left[0])**2 + (selection[1] - left[1])**2)**0.5)/max_dist)
-        right_score = 1-((((selection[0] - right[0])**2 + (selection[1] - right[1])**2)**0.5)/max_dist)
+        # # Will need to fix these a bit - max_dist changes with the position of the point
+        # max_dist = ((top[0] - left[0])**2 + (top[1] - left[1])**2)**0.5
+        # top_score = 1-((((selection[0] - top[0])**2 + (selection[1] - top[1])**2)**0.5)/max_dist)
+        # left_score = 1-((((selection[0] - left[0])**2 + (selection[1] - left[1])**2)**0.5)/max_dist)
+        # right_score = 1-((((selection[0] - right[0])**2 + (selection[1] - right[1])**2)**0.5)/max_dist)
 
-        st.write("things score: " + str(top_score))
-        st.write("stuff and also things score: " + str(left_score))
-        st.write("things and stuff score: " + str(right_score))
+        # st.write("things score: " + str(top_score))
+        # st.write("stuff and also things score: " + str(left_score))
+        # st.write("things and stuff score: " + str(right_score))
         
