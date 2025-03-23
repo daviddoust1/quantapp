@@ -3,6 +3,9 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
+import urllib.request
+
+urllib.request.urlretrieve('https://github.com/daviddoust1/quantapp/blob/main/TriangleText.png?raw=true', 'TriangleText.png')
 
 # Streamlit app: To run, open a terminal and run:
 # streamlit run QApp.py
@@ -24,8 +27,6 @@ canvas_result = st_canvas(
 complete = st.checkbox(label='Complete', value=False)
 
 if complete:
-    # if canvas_result.image_data is not None:
-    #     st.image(canvas_result.image_data)
     if canvas_result.json_data is not None:
         objects = pd.json_normalize(canvas_result.json_data["objects"])
         for col in objects.select_dtypes(include=["object"]).columns:
@@ -48,8 +49,3 @@ if complete:
         st.write("stuff and also things score: " + str(left_score))
         st.write("things and stuff score: " + str(right_score))
         
-
-
-#  st.dataframe(data=df)
-# st.write(red)
-
